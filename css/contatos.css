@@ -1,0 +1,91 @@
+.menu_top {
+    width: 100%;
+    height: 80px;
+}
+.menu_top img {
+    float: left;
+    height: 40px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.menu_top .menu .linkMenu {
+    text-decoration: none;
+    margin: 30px 8px 0px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    position: relative;
+    color: #000;
+    left: 50%;
+    top: 30px;
+}
+.menu_top .menu .login {
+    background-color: aqua;
+    color: rgb(2, 0, 0);
+    padding: 10px 12px;
+}
+.section-banner-home {
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+    margin: 30px auto;
+    background-color: #005caa;
+}
+.section-banner-home img {
+    height: 400px;
+}
+.section-banner-home .texto-banner {
+    margin-top: 30px;
+    font-size: 22px;
+}
+.section-banner-home .texto-banner h1 {
+    font-size: 30px;
+    width: 60%;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.section-banner-home .texto-banner p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.section-banner-home .texto-banner a {
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 4px 14px;
+    font-size: 15px;
+}
+/* CSS FOOTER */
+.rodape {
+    padding: 100px 150px 0;
+}
+.rodape .info-contato {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 15px;
+}
+.rodape .info-contato a {
+    font-size: 20px;
+}
+.rodape a {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+.rodape a:hover {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    font-family: sans-serif;
+    width: 70px;
+    height: 50px;
+}
+.redes-sociais p.direitos {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 60px;
+}
