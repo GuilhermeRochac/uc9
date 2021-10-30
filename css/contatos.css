@@ -89,3 +89,9 @@
     text-align: center;
     margin-top: 60px;
 }
+.form {
+    position: relative;
+    width: 42   0px;
+    margin-left: auto;
+    margin-right: auto;
+}
