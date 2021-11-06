@@ -1,12 +1,34 @@
-$("body").on('click','.icone_exibir', function(event) {
-    event.preventDefault();
-    $(".barra_lateral").toggleClass("exibir_conteudo");
-    $(".icone_exibir").css('display','none');
-    $(".icone_ocultar").css('display', 'blocks');
-});
-$("body").on('click','.icone_ocultar', function(event) {
-    event.preventDefault();
-    $(".barra_lateral").toggleClass("exibir_conteudo");
-    $(".icone_exibir").css('display','block');
-    $(".icone_ocultar").css('display', 'none');
-});
+class MobileNavBar {
+    constructor(mobileMenu, navList, navLinks) {
+        this.mobileMenu = document.querySelector(mobileMenu);
+        this.navList = document.querySelector(navList);
+        this.navLinks = document.querySelectorAll(navLinks);
+        this.activeClass = "active";
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    animetedLinks() {
+        this.navLinks.forEach((link, index) => {
+            link.style.animation
+            ? (link.style.animation = "")
+            : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+                index / 7 + 0.3
+            }s`)
+        })
+    }
+}
+handleClick() {
+    this.navList.classList.toggle(this.activeClass);
+    this.mobileMenu.classList.toggle(this.activeClass);
+    this.animetedLinks();
+}
+addclickEvent() {
+    this.mobileMenu.addEventListener("click", this.handleClick);
+}
+init() {
+    if (this.mobileMenu) {
+        this.addclickEvent();
+    }
+    return this;
+}

@@ -1,80 +1,97 @@
 /* CSS MENU RESPONSIVO */
-
-
-a.icone_exibir {
-    background-color: #2196F3;
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #FFF;
     text-decoration: none;
-    padding: 5px 20px;
-    color: #000;
-    position: absolute;
+    transition: 0.5s;
+}
+a:hover {
+    opacity: 0.7;
+}
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #005CAA;
+    height: 18vh;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+.mobile-menu {
     display: none;
+    cursor: pointer;
+    
 }
-.main {
-    width: calc(100% - 250px);
-    margin-left: 250px;
-    padding: 20px 30px;
-    box-sizing: border-box;
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #FFF;
+    margin: 8px;
+    transition: 0.3s;
 }
-aside.barra_lateral {
-    width: 250px;
-    min-height: calc(100% - 120px);
-    background-color: #03A9F4;
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+.nav-list {
     position: absolute;
-    left: 0;
-    transition: .5s all;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #005CAA;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: transform 0.3s ease-in;
 }
-aside .icone_ocultar {
-    width: 100%;
-    position: relative;
+.nav-list li {
+    margin-left: 0;
+    opacity: 0;
+}
+.mobile-menu {
     display: block;
-    background: #2196F3;
-    color: #000;
-    text-align: center;
-    padding: 5px 0px;
-    border-bottom: 1px solid #494949;
-    text-decoration: none;
-    display: none;
-    transition: 1s all;
 }
-.exibir_conteudo {
-    left: 0 !important;
+.nav-list.active {
+    transform: translateX(0);
 }
-@media screen and (max-width: 768px) {
-    main {width: 100%; margin-left: 0; margin-top: 30px;}
-    aside.barra_lateral {left: -250px;}
-    a.icone_exibir {display: block !important; }
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
-@media screen and (min-width: 768px) {
-    aside .icone_ocultar {display: none !important;}
-    a.icone_exibir {display: none !important;}
+.mobile-menu.nav-list.active .line1 {
+    transform: rotate(-45deg) translate(-8px,8px);
+}
+.mobile-menu.nav-list.active line2 {
+    opacity: 0;
+}
+.mobile-menu.nav-list.active line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
 }
 
-.menu_top {
-    width: 100%;
-    height: 80px;
-}
-.menu_top img {
-    float: left;
-    height: 40px;
-    position: relative;
-    top: 20px;
-    left: 20px;
-}
-.menu_top .menu .linkMenu {
-    text-decoration: none;
-    margin: 30px 8px 0px;
-    font-weight: bold;
-    font-family: 'Montserrat';
-    position: relative;
-    color: #000;
-    left: 50%;
-    top: 30px;
-}
-.menu_top .menu .login {
-    background-color: aqua;
-    color: rgb(2, 0, 0);
-    padding: 10px 12px;
-}
+/* CSS Banner */
 .section-banner-home {
     width: 100%;
     height: 500px;
