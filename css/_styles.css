@@ -1,4 +1,6 @@
 /* CSS MENU RESPONSIVO */
+
+
 a.icone_exibir {
     background-color: #2196F3;
     text-decoration: none;
@@ -104,6 +106,8 @@ aside .icone_ocultar {
     padding: 4px 14px;
     font-size: 15px;
 }
+
+
 /* Galeria */
 .destaque h2 {
     text-align: center;
@@ -163,6 +167,8 @@ aside .icone_ocultar {
     width: 30%;
     margin: 14px auto 50px;
 }
+
+
 /* CSS FOOTER */
 .rodape {
     padding: 50px 50px 0;
