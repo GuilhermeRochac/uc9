@@ -1,121 +1,88 @@
-/* CSS MENU RESPONSIVO */
-a.icone_exibir {
-    background-color: #2196F3;
-    text-decoration: none;
-    padding: 5px 20px;
-    color: #000;
-    position: absolute;
-    display: none;
-}
-.main {
-    width: calc(100% - 250px);
-    margin-left: 250px;
-    padding: 20px 30px;
-    box-sizing: border-box;
-}
-aside.barra_lateral {
-    width: 250px;
-    min-height: calc(100% - 120px);
-    background-color: #03A9F4;
-    position: absolute;
-    left: 0;
-    transition: .5s all;
-}
-aside .icone_ocultar {
-    width: 100%;
-    position: relative;
-    display: block;
-    background: #2196F3;
-    color: #000;
-    text-align: center;
-    padding: 5px 0px;
-    border-bottom: 1px solid #494949;
-    text-decoration: none;
-    display: none;
-    transition: 1s all;
-}
-.exibir_conteudo {
-    left: 0 !important;
-}
-@media screen and (max-width: 768px) {
-    main {width: 100%; margin-left: 0; margin-top: 30px;}
-    aside.barra_lateral {left: -250px;}
-    a.icone_exibir {display: block !important; }
-}
-
+/* CSS */
 .menu_top {
-    width: 100%;
-    height: 80px;
+    width: 100%;height: 80px;
 }
-.menu_top img {
+/* Seletores destacados em vermelho*/
+.menu_top img{
     float: left;
     height: 40px;
     position: relative;
     top: 20px;
     left: 20px;
 }
-.menu_top .menu .linkMenu {
+.menu_top .menu .linkMenu{
     text-decoration: none;
     margin: 30px 8px 0px;
     font-weight: bold;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: 'Montserrat';
     position: relative;
     color: #000;
     left: 50%;
     top: 30px;
 }
-.menu_top .menu .login {
+.menu_top .menu .login{
     background-color: aqua;
-    color: rgb(2, 0, 0);
+    color: #fff;
     padding: 10px 12px;
 }
-.section-banner-home {
+/* CSS */
+.section-banner-home{
     width: 100%;
     height: 500px;
     padding: 50px;
     margin: 30px auto;
     background-color: #005caa;
 }
+
 .section-banner-home img {
     height: 400px;
 }
+
 .section-banner-home .texto-banner {
     margin-top: 30px;
     font-size: 22px;
 }
-.section-banner-home .texto-banner h1 {
+
+.section-banner-home .texto-banner h1{
     font-size: 30px;
     width: 60%;
     font-weight: 500;
     padding-bottom: 20px;
 }
-.section-banner-home .texto-banner p {
+
+.section-banner-home .texto-banner p{
     font-size: 15px;
     margin-bottom: 20px;
 }
-.section-banner-home .texto-banner a {
+
+.section-banner-home .texto-banner a{
     color: #000;
     text-decoration: none;
     background-color: #fff;
     padding: 4px 14px;
     font-size: 15px;
 }
-/* Galeria */
-.destaque h2 {
+/*CSS Destaque*/
+.destaque {
+    margin-top: 150px;
+}
+
+.destaque h2{
     text-align: center;
     font-size: 24px;
     font-weight: bold;
 }
-.destaque .destaque p{
+.destaque p{
     width: 77%;
     text-align: center;
     font-size: 14px;
     margin: 30px auto;
 }
-.destaque figcaption {
+.destaque figcaption{
     font-size: 13px;
 }
-.destaque a {
+.destaque a{
     justify-content: center;
     display: flex;
     text-decoration: none;
@@ -123,47 +90,52 @@ aside .icone_ocultar {
     font-size: 18px;
     font-weight: bold;
     margin: 30px 0;
-} 
-.novidades {
+}
+/* CSS Novidades */
+.novidades{
     background-color: #082373;
     padding: 50px;
 }
-.novidades .text-body {
+.novidades .text-body{
     width: 80%;
     margin: 70px auto;
 }
-.novidades h2 {
+.novidades h2{
     color: #fff;
     font-size: 26px;
     width: 70%;
 }
-.novidades p {
+.novidades p{
     color: #fff;
 }
-.novidades a {
+.novidades a{
     color: #000;
     text-decoration: none;
     padding: 6px 12px;
     background-color: #fff;
     font-weight: 400;
 }
+/* CSS Galeria Full*/
 .galeria {
     margin: 60px auto 20px;
 }
-.galeria h2 {
+.galeria h2{
+    text-align: center;
+    font-size: 24px;
+}
+.galeria p{
     text-align: center;
     width: 50%;
     margin: 14px auto 50px;
 }
-.galeria .gallery {
-    width: 30%;
-    margin: 14px auto 50px;
+.galeria .gallery{
+    margin: 10px auto 10px;
 }
-/* CSS FOOTER */
+/* CSS Footer*/
 .rodape {
     padding: 50px 50px 0;
 }
-.rodape .info-contato {
+.rodape .info-contato p {
     margin: 0px;
 }
 .rodape a {
@@ -181,7 +153,45 @@ aside .icone_ocultar {
     width: 45px;
     height: 40px;
 }
-.redes-sociais p.direitos {
+.rodape p.direitos {
     text-align: center;
     margin-top: 40px;
+}
+/* CSS formulário de contato */
+.contact{
+    padding: 4%;
+    height: 400px;
+}
+.col-md-3{
+    background: #ff9b00;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+    margin-top:10%;
+}
+.contact-info img{
+    margin-bottom: 15%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+.col-md-9{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:focus{
+    box-shadow:none;
 }
