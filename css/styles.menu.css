@@ -1,0 +1,283 @@
+/*/aula de 13/11/2021/*/
+
+body, ul {
+    margin: 0px;
+    padding: 0px;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+    a:hover{
+        background: rgba(0,0,0,0.05);
+    }
+    #logo{
+        font-size: 1.5rem;
+    }
+    #header{
+        box-sizing: border-box;
+        height: 70px;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #e7e7e7;
+    }
+    #menu{
+        display: flex;
+        list-style: none;
+        gap: 0.5rem;
+    }
+    #btn-mobile{
+        display: none;
+    }
+    
+    
+    /* css*/
+    /*CSS menu responsivo*/
+    a.icone_exibir{
+        background-color: #2196f3;
+        text-decoration: none;  
+        padding: 5px 20px;
+        color:#000;
+        position: absolute;
+        display: none;
+    
+    }
+    .main{
+        width: calc(100% - 250px);
+        margin-left:250px;
+        padding:20px 30px;
+        box-sizing: border-box;
+    
+    }
+    aside.barra_lateral{
+        width: 250px;
+        min-height: calc(100% - 120px);
+        background-color: #03a9f4;
+        position:absolute;
+        left: 0;
+        transition: .5s all;
+    
+    }
+    aside .icone_ocultar {
+        width:100%;
+        position: relative;
+        display: block;
+        background: #2196f3;
+        color: #000;
+        text-align:center;
+        padding: 5px 0px;
+        border-bottom: 1px solid #494949;
+        text-decoration: none;
+        display: none;
+        transition: 1s all;
+    
+    
+    
+    }
+    .exibir_conteudo {
+        left:0 !important;
+    
+    }
+    @media screen and (max-width:768px){
+        main{width: 100%; margin-left: 0; margin-top: 30px;}
+        aside.barra_lateral{left:-250px;}
+        a.icone_exibir{display:block !important};
+    }
+    @media screen and (min-width: 768px){
+        aside .icone_ocultar {display: none !important;}
+        a.icone_exibir {display:none !important;}
+    }
+    
+    /* CSS banner*/
+    
+    .section-banner-home{
+        width: 100%;
+        height: 500px;
+        padding: 50px;
+        margin: 30px auto;
+        background-color: #005caa;
+    }
+    .section-banner-home img{
+        height: 400px;
+    }
+    .section-banner-home .texto-banner {
+        margin-top: 100px;
+        font-size: 22px ;
+    }
+    .section-banner-home .texto-banner h1{
+        font-size: 30px;
+        width:  60%;
+        font-weight: 500;
+        padding-bottom: 20px;
+    
+    }
+    .section-banner-home .texto-banner p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .section-banner-home .texto-banner a{
+        color: #000;
+        text-decoration: none;
+        background-color: #fff;
+        padding: 4px 14px;
+        font-size: 15px;
+    }
+    /* CSS-galeria */
+    .destaque h2{
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+        .destaque p{
+            width: 77%;
+            text-align: center;
+            font-size: 14px;
+            margin: 30px auto;
+    
+        }
+        .destaque figcaption{
+            font-size: 20px;
+        }
+        .destaque a{
+            justify-content:  center;
+            display: flex;
+            text-decoration: none;
+            color: #30dcf4;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 30px 0;
+        }
+        .novidades{
+            background-color: #082373;
+            padding: 50px;
+    
+           
+        }
+        .novidades .text-body{
+            width: 80%;
+            margin: 70px auto;
+        }
+        .novidades h2{
+        font-size: 26px;
+         
+    
+        }
+    .novidades p{
+        color:#fff;
+    
+    }
+    .novidades a{
+        color: #000;
+        text-decoration: none;
+        padding: 6px 12px;
+        background-color: #fff;
+        font-weight: 400;
+    }
+    .galeria {
+        margin:60px auto  20px;
+    }
+    .galeria h2{
+        text-align: center;
+        font-size: 24px;
+    }
+    .galeria p{
+        text-align: center;
+        width: 50%;
+        margin: 14px auto 50px;
+    
+    }
+    .galeria .gallery{
+        width: 30%;
+        margin: 14px auto 50px;
+    }
+    /* CSS footer*/
+    .rodape {
+        padding: 50px 50px 0;
+    }
+    .rodape .info-contato p{
+        margin: 0px;
+        color:#000;
+        text-decoration: none;
+    
+    }
+    .rodape a{
+        text-decoration: none;
+        color: #000;
+        font-size: 13px;
+    
+    }
+    .rodape a:hover {
+        font-weight: bold;
+    
+    }
+    .rodape .redesociais {
+        display:inline-block;
+    
+    }
+    .rodape .redes-sociais img{
+        width:45px;
+        height: 40px;
+    
+    }
+    .rodape p .direitos{
+        text-align: center;
+        margin-top:40px;
+    }
+    /* CSS formulario contato 30/10/2021* acrscentar o btn*/
+    .contact-form {
+        background: #fff;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        width: 70%;
+    }
+    .contact-form .form-control{
+        border-radius: 1rem;
+    
+    }
+    .contact-image{
+        text-align: center;
+    }
+    .contact-imagem img{
+        border-radius:6rem;
+        width: 11%;
+        margin-top:-3%;
+        transform: rotate(29deg);
+    
+    }
+    .contact-form form{
+        padding:14%;
+    
+    }
+    .contato-form form .row{
+        margin-bottom: -7%;
+    
+    }
+    .contact-form h3 {
+        margin-bottom:8%;
+        margin-top:-10%;
+        text-align: center;
+        color: #0062cc;
+    
+    }
+    .contact-form .btncontact{
+        width: 50%;
+        border-radius:1rem;
+        padding:1.5%;
+        color:#fff;
+        background-color:#0062cc;
+        border:none;
+        cursor: pointer;
+    }
+    .btnContactSumit {
+        width: 50%;
+        border-radius: 1rem;
+        padding: 1.5%;
+        color: #fff;
+        background-color: #0062cc;
+        border: none;
+        cursor: pointer;
+    }
+    
