@@ -32,7 +32,7 @@ body, ul {
     #btn-mobile{
         display: none;
     }
-    @media (max-widht:600px) {
+    @media (max-widht: 600px) {
        #menu {
            display: block;
            position: absolute;
@@ -59,7 +59,7 @@ body, ul {
        #menu a{
            padding: 1rem 0;
            margin: 0 1rem;
-           border-bottom: 2px solid rgba(red, green, blue, alpha);
+           border-bottom: 2px solid rgba(0, 0, 0, 0.05);
        }
        #btn-mobile{
            display: flex;
@@ -92,7 +92,7 @@ body, ul {
 
        }
        #nav.active #hamburguer::before{
-           transform: rotate(-135deg);
+           transform: rotate(135deg);
        }
        #nav.active #hamburguer::after{
            transform: rotate(-135deg);
