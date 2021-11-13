@@ -32,27 +32,32 @@ body, ul {
     #btn-mobile{
         display: none;
     }
-    @media (max-width: 600px) {
-        #menu {
-            display: block;
-            position:absolute;
-            width: 100px;
-            top: 70px;
-            right: 0px;
-            background: #e7e7e7;
-            transition: 0.5s;
-            z-index: 100;
-            height: 0px;
-            visibility: hidden;
-            overflow: hidden;
-        }
-        #nav.active #menu{
-            height: calc(100vh - 70px);
-            visibility: visible;
-            overflow: auto;
-        }
-        #menu a {
-            padding: 1rem 0;
+    @media (max-widht:600px) {
+       #menu {
+           display: block;
+           position: absolute;
+           width: 100%;
+           top: 70px;
+           bottom: 5px;
+           right: 0px;
+           background: #e7e7e7;
+           transition: 0.6s;
+           z-index: 1000;
+           height: 0px;
+           visibility: hidden;
+           overflow: hidden;
+       }
+       .menu li{
+           padding-top: 20px;
+
+       } 
+       #nav.active #menu{
+           height: calc(100vh - 70px);
+           visibility: visible;
+           overflow: auto;
+       }
+       #menu a{
+           padding: 1rem 0;
            margin: 0 1rem;
            border-bottom: 2px solid rgba(red, green, blue, alpha);
        }
@@ -68,14 +73,14 @@ body, ul {
        }
        #hamburguer{
            border-top: 2px solid;
-           width: 20px;
+           width: 30px;
 
        }
        #hamburguer::after
        #hamburguer::before{
            content: '';
            display: block;
-           width: 20px;
+           width: 30px;
            height: 2px;
            background: currentColor;
            margin-top: 5px;
@@ -95,7 +100,8 @@ body, ul {
     
        
     }
-
+    
+    
     /* css*/
     /*CSS menu responsivo*/
     a.icone_exibir{
