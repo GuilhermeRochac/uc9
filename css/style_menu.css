@@ -16,6 +16,9 @@ body, ul {
         font-size: 1.5rem;
     }
     #header{
+        width: 100%;
+        position: fixed;
+        z-index: 90;
         box-sizing: border-box;
         height: 70px;
         padding: 1rem;
@@ -31,6 +34,11 @@ body, ul {
     }
     #btn-mobile{
         display: none;
+    }
+    #carouselExampleInterval{
+        position: relative;
+        z-index: 10;
+        padding-top: 80px;
     }
     @media (max-widht: 600px) {
        #menu {

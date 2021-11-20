@@ -5,33 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style_menu.css">
+    <link rel="stylesheet" type="text/css" href="css/_styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="shortcut icon" href="img/ico/game2.ico">
+    
     <title>Meu primeiro site!</title>
 </head>
 <body>
-    <!-- Início Menu-->
+<!-- início menu responsivo -->
     <header id="header">
         <a id="logo" href="index.html"><img src="img/senai_small.jpg" alt="Logo Senai"></a>
-        <nav id='nav'>
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-                aria-expanded="false">menu
-                <span id="hamburguer"></span>
-            </button>        
-            <ul id="menu" role="menu">
-                <li><a class="LinkMenu" href="jogos.html">Jogos</a></li>
-                <li><a class="LinkMenu" href="hardware.hmtl">Hardware</a></li>
-                <li><a class="LinkMenu" href="celulares.html">Celulares</a></li>
-                <li><a class="LinkMenu" href="pc-gamer.hmtl">PC Gamer</a></li>
-                <li><a class="LinkMenu" href="contato.html">Contato</a></li>
-                <li><a class="LinkMenu" href="login.html">Login</a></li>
-            </ul>
-        </nav>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a class="linkMenu" href="jogos.html">Jogos</a></li>
+                    <li><a class="linkMenu" href="hardware.html">Hardware</a></li>
+                    <li><a class="linkMenu" href="celulares.html">Celulares</a></li>
+                    <li><a class="linkMenu" href="pc-gamer.html">PC Gamer</a></li>
+                    <li><a class="linkMenu" href="contato.html">Contato</a></li>
+                    <li><a class="linkMenu" href="login.html">Login</a></li>
+                </ul>
+            </nav>
     </header>
-    
-    <!-- Fim menu-->
-    <!-- Início Banner-->    
+  
+    <!-- fim menu responsivo -->
+        <!-- início carousel página principal-->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="500">
+                <img
+                  src="https://mdbootstrap.com/img/new/slides/041.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="https://mdbootstrap.com/img/new/slides/042.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://mdbootstrap.com/img/new/slides/043.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              data-bs-target="#carouselExampleInterval"
+              type="button"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              data-bs-target="#carouselExampleInterval"
+              type="button"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+       </div>
+          <!-- fim carousel página -->
+        
         <div class="section-banner-home">
             <div class="container-fluid">
                 <div class="row m-0">
@@ -65,7 +109,7 @@
                     <div class="col-6 col-md-2 pr-0">
                         <figure>
                             <a href="jogos.html"><img src="img/painel-super-mario-bros.jpg" alt="galeria" width="100%"></a>
-                            <figcaption>Jogo <br> ano</figcaption>
+                       
                         </figure>
                     </div>
                     <!-- fim da imagem 1-->
@@ -73,7 +117,7 @@
                     <div class="col-6 col-md-2 pr-0">
                         <figure>
                             <a href="jogos.html"><img src="img/painel-super-mario-bros.jpg" alt="galeria" width="100%"></a>
-                            <figcaption>Jogo <br> ano</figcaption>
+                     
                         </figure>
                     </div>
                     <!-- fim da imagem 2-->
@@ -81,7 +125,7 @@
                     <div class="col-6 col-md-2 pr-0">
                         <figure>
                             <a href="jogos.html"><img src="img/painel-super-mario-bros.jpg" alt="galeria" width="100%"></a>
-                            <figcaption>Jogo <br> ano</figcaption>
+                       
                         </figure>
                     </div>
                     <!-- fim da imagem 3-->
@@ -89,15 +133,16 @@
                     <div class="col-6 col-md-2 pr-0">
                         <figure>
                             <a href="jogos.html"><img src="img/painel-super-mario-bros.jpg" alt="galeria" width="100%"></a>
-                            <figcaption>Jogo <br> ano</figcaption>
+                       
                         </figure>
+
                     </div>
                     <!-- fim da imagem 4-->
                     <!-- início da imagem 5-->
                     <div class="col-6 col-md-2 pr-0">
                         <figure>
                             <a href="jogos.html"><img src="img/painel-super-mario-bros.jpg" alt="galeria" width="100%"></a>
-                            <figcaption>Jogo <br> ano</figcaption>
+                       
                         </figure>
                     </div>
                     <!-- fim da imagem 5-->
@@ -110,25 +155,25 @@
             </div>
         </div>
         
-        <!-- Atividades presenciais 16/10/2021-->
-        <div class="novidades"> 
+        
+        <div class="novidades">
             <div class="container-fluid">
                 <div class="row">
-                        <!-- início do texto das novidades-->
-                        <div class="col-md-6">
-                            <section class="text-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia ex nisi? Autem ex qui repellat molestias debitis nulla animi, velit odit iure expedita suscipit placeat aspernatur nisi esse accusantium.</p>
-                                <a class="btn-banner" href="#" target="_blank">Saiba Mais</a>
-                            </section>
-                        </div>
-                        <!-- fim do texto das novidades-->
-                        <!-- Início da imagem novidades-->
-                        <div class="col-md-6">
-                            <figure>
-                                <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="banner-home">
-                            </figure>                        
-                        </div>
-                    <!-- fim da imagem novidades-->
+                    <!-- início do texto das novidades-->
+                    <div class="col-md-6">
+                        <section class="text-body">
+                            <h2>Venha conhecer nossas novidades!</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere ea nostrum aspernatur nemo necessitatibus voluptatibus ab sequi sint, ut eum quasi minus ipsa molestias facilis quidem similique repudiandae dolorum ad.</p>
+                            <a class="btn-banner" href="#" target="_blank">Saiba mais.</a>
+                        </section>
+                    </div>
+                    <!-- fim do texto novidades -->
+                    <div class="col-md-6">
+                        <figure>
+                            <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="banner-home">
+                        </figure>
+                    </div>
+                    <!-- fim da imagem das novidades-->
                 </div>
             </div>
         </div>
@@ -136,137 +181,133 @@
         <div class="galeria d-flex align-items-center">
             <div class="container">
                 <div class="row">
-                    <!-- início texto das galerias-->
+                    <!-- início do texto da galeria-->
                     <div class="col-12">
                         <section class="texto-galeria">
-                            <h2>Conheça nossa galeria</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam temporibus autem odio similique fuga optio porro quam alias quidem accusamus sint iure rerum magnam, mollitia est enim vitae tempore quibusdam!</p>
+                            <h2>Conheça nossa galeria.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolor maiores praesentium inventore similique enim, quo repellendus rerum laborum fugit iste tenetur eos porro commodi recusandae distinctio sit repellat magnam.</p>
                         </section>
                     </div>
-                    <!-- fim do texta das galerias-->
+                    <!-- fim do texto da galeria-->
                     <!-- início da imagem 1 da galeria-->
-                    <div class="gallery col-6 col-md-3">
-                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">                        
+                    <div class="gallery col-6 col-md-3" >
+                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">
                     </div>
                     <!-- fim da imagem 1 da galeria-->
                     <!-- início da imagem 2 da galeria-->
                     <div class="gallery col-6 col-md-3">
-                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">                        
+                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">
                     </div>
                     <!-- fim da imagem 2 da galeria-->
                     <!-- início da imagem 3 da galeria-->
                     <div class="gallery col-6 col-md-3">
-                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">                        
+                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">
                     </div>
                     <!-- fim da imagem 3 da galeria-->
                     <!-- início da imagem 4 da galeria-->
                     <div class="gallery col-6 col-md-3">
-                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">                        
+                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">
                     </div>
                     <!-- fim da imagem 4 da galeria-->
                     <!-- início da imagem 5 da galeria-->
                     <div class="gallery col-6 col-md-3">
-                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">                        
+                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">
                     </div>
                     <!-- fim da imagem 5 da galeria-->
                     <!-- início da imagem 6 da galeria-->
                     <div class="gallery col-6 col-md-3">
-                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">                        
+                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">
                     </div>
                     <!-- fim da imagem 6 da galeria-->
                     <!-- início da imagem 7 da galeria-->
                     <div class="gallery col-6 col-md-3">
-                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">                        
+                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">
                     </div>
                     <!-- fim da imagem 7 da galeria-->
                     <!-- início da imagem 8 da galeria-->
                     <div class="gallery col-6 col-md-3">
-                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">                        
+                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">
                     </div>
                     <!-- fim da imagem 8 da galeria-->
                     <!-- início da imagem 9 da galeria-->
                     <div class="gallery col-6 col-md-3">
-                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">                        
+                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">
                     </div>
                     <!-- fim da imagem 9 da galeria-->
                     <!-- início da imagem 10 da galeria-->
                     <div class="gallery col-6 col-md-3">
-                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">                        
+                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">
                     </div>
                     <!-- fim da imagem 10 da galeria-->
                     <!-- início da imagem 11 da galeria-->
                     <div class="gallery col-6 col-md-3">
-                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">                        
+                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">
                     </div>
                     <!-- fim da imagem 11 da galeria-->
                     <!-- início da imagem 12 da galeria-->
                     <div class="gallery col-6 col-md-3">
-                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">                        
+                        <img src="img/painel-super-mario-bros.jpg" class="img-fluid" alt="img-galeria">
                     </div>
-                    <!-- fim da imagem 12 da galeria-->
-                    <!-- início footer-->
-                   <footer class="rodape">
-                       <div class="container">
-                           <div class="row m-0">
-                               <!-- início do logo-->
-                                <div class="col-md-4">
-                                    <figure>
-                                        <img src="img/senai_small.jpg" alt="logo-rodape" width="40%">
-                                    </figure>
-                                </div>
-                                <!-- fim do logo-->
-                                
-                                <!-- início do texto-->
-                                <div class="col-md-4">
-                                    <div class="info-contato">
-                                        <p>email:</p>
-                                        <p>example@corp.net</p><br>
-                                        <p>Endereço:</p>
-                                        <p>Avenida ABC, 123</p><br>
-                                        <p>Telefone:</p>
-                                        <p>+55 (15) 9.9999-1234</p>
-                                    </div>
-                                </div>
-                                <!-- fim do texto-->
-                                <!-- início das mídias sociais-->
-                                <div class="col-md-4">
-                                    <figure class="redes-sociais">
-                                        <!-- alt + shift + seta para baixo (copia)-->
-                                        <!-- ctrl + space (mostra caminho da pasta) dentro de SRC-->
-                                        
-                                        <a href="#"><img src="img/face.png"></a>
-                                        <a href="#"><img src="img/insta.png"></a>
-                                        <a href="#"><img src="img/youtube.png"></a>
-                                        <a href="#"><img src="img/linkedin.png"></a>
-                                    </figure>
-                                    <br>
-                                    <a href="#">Jogos</a><br>
-                                    <a href="#">Hardware</a><br>
-                                    <a href="#">Celulares</a><br>
-                                    <a href="#">PC Gamer</a><br>
-                                    <a href="#">Contato</a><br>
-                                    <a href="#">Login</a><br>
-                                </div>
-                                <!-- fim das mídias sociais-->
-                                <!-- início dos direitos autorais-->
-                                <div class="col-12">
-                                    <p class="direitos">Direitos Autorais</p>
-                                </div>
-                                <!-- fim dos direitos autorais-->
-                           </div>
-                       </div>
-                   </footer>
-                   <!-- fim do texto da galeria-->
+                    <!-- fim da imagem 12 da galeria-->     
 
-                </div>
+                   <footer class="rodape">
+                           <div class="container">
+                               <div class="row m-0">
+                                    <!-- início do logo-->
+                                    <div class="col-md-4">
+                                        <figure>
+                                            <img src="img/senai_small.jpg" alt="logo-rodape" width="40%">
+                                        </figure>
+                                    </div>
+                                    <!-- fim do logo-->
+                                    <!-- início do texto-->
+                                    <div class="col-md-4">
+                                        <div class="info-contato">
+                                            <p>email:</p>
+                                            <p>example@valt.com</p><br>
+                                            <p>Endereço:</p>
+                                            <p>Avenida: ABC - 123</p><br>
+                                            <p>Telefone:</p>
+                                            <p>+55 (11) 9.9922-5500</p><br>
+                                        </div>
+                                    </div>
+                                    <!-- fim do texto-->
+                                    <!-- início das mídias sociais-->
+
+                                    <!-- Alt + Shift + Seta para baixo (copia e cola)-->
+                                    <!-- Ctrl + Espaço (mostra p caminho do arquivo) dentro de SRC-->
+                                    <div class="col-md-4">
+                                        <figure class="redes-sociais">
+                                            <a href="#"><img src="img/face.png"></a>
+                                            <a href="#"><img src="img/insta.png"></a>
+                                            <a href="#"><img src="img/youtube.png"></a>
+                                            <a href="#"><img src="img/linkedin.png"></a>
+                                        </figure>
+                                        <br>
+                                        <a href="#">Jogos</a><br>
+                                        <a href="#">Hardware</a><br>
+                                        <a href="#">Celulares</a><br>
+                                        <a href="#">PC Gamer</a><br>
+                                        <a href="#">Contato</a><br>
+                                        <a href="#">Login</a><br>
+                                    </div>
+                                    <!-- fim das mídias sociais-->
+                                    <!-- início dos direitos autorais-->
+                                    <div class="col-12">
+                                        <p class="direitos">Direitos Autorais</p>
+                                    </div>
+                                    <!-- fim dos direitos autorais-->
+                               </div>
+                           </div>
+                       </footer>
+                       <!-- fim do texto da galeria-->                   
+                
+                    </div>
             </div>
-        </div>        
+        </div>
 </body>
 
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-
-
-
-<script type="text/javascript" src="js/script_menu.js"></script>
+<script src="js/script_menu.js"></script>
 
 </html>
